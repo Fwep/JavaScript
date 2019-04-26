@@ -55,6 +55,7 @@ function Elephant(name, height, tricks) {
   this.name = name;
   this.height = height;
   this.tricks = tricks;
+  console.log(this);
 }
 
 Elephant.prototype.trumpet = function() {
@@ -94,3 +95,5 @@ const dinerBreakfast = (food) => {
   order.push(food);
   makeOrder(order);
 }
+
+let dumbo = new Elephant();
